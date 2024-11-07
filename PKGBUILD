@@ -2,7 +2,7 @@
 # Contributor: Philip Müller <philm@manjaro.org>
 
 pkgname=pacman-mirrors
-pkgver=4.27
+pkgver=4.28
 pkgrel=1
 pkgdesc="Manjaro Linux mirror list for use by pacman"
 arch=('any')
@@ -34,7 +34,7 @@ source=("git+https://gitlab.manjaro.org/applications/pacman-mirrors.git#tag=v$pk
         "$pkgname-upgrade.script"
         "$pkgname-install.hook"
         "$pkgname-upgrade.hook")
-sha256sums=('7559575196681a5fd40df0559341dde995bc9168bfd1aca81aa0ccae083471e3'
+sha256sums=('7dd2d6257f4dc2a1a82339b1beb472d96a8620a761d9e5c6a162d963ac7b5647'
             '718a47605be1ca328255b19047dee6d331e0440f303b86d17485fe53937b7906'
             '3b1df8c662161903653b0ae41d910019f87a58f3ecd8e02ea9ac8859b9c43f17'
             '88befb1a9b167112e05544ec4a765705bf474209e7ef67c44ffc418e10e89bfa'
