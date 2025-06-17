@@ -2,8 +2,8 @@
 # Contributor: Philip Müller <philm@manjaro.org>
 
 pkgname=pacman-mirrors
-pkgver=4.28
-pkgrel=2
+pkgver=5.0
+pkgrel=1
 pkgdesc="Manjaro Linux mirror list for use by pacman"
 arch=('any')
 url="https://gitlab.manjaro.org/applications/pacman-mirrors"
@@ -34,7 +34,7 @@ source=("git+https://gitlab.manjaro.org/applications/pacman-mirrors.git#tag=v$pk
         "$pkgname-upgrade.script"
         "$pkgname-install.hook"
         "$pkgname-upgrade.hook")
-sha256sums=('7dd2d6257f4dc2a1a82339b1beb472d96a8620a761d9e5c6a162d963ac7b5647'
+sha256sums=('2c968d16456cc42135dbe61d8e249e09e5dcfcb8c44c2a58318fce4ef42462df'
             '718a47605be1ca328255b19047dee6d331e0440f303b86d17485fe53937b7906'
             '3b1df8c662161903653b0ae41d910019f87a58f3ecd8e02ea9ac8859b9c43f17'
             '88befb1a9b167112e05544ec4a765705bf474209e7ef67c44ffc418e10e89bfa'
@@ -53,7 +53,7 @@ package() {
 
   install -d "$pkgdir/etc/pacman.d"
   install -Dm644 "data/etc/$pkgname.conf" -t "$pkgdir/etc/"
-  install -Dm644 data/share/mirrors.json -t "$pkgdir/usr/share/$pkgname/"
+  install -Dm644 data/share/mirrors.json -t "$pkgdir/var/lib/$pkgname/"
   install -Dm644 "data/man/$pkgname.8.gz" -t "$pkgdir/usr/share/man/man8/"
   install -Dm644 {AUTHORS,CHANGELOG,CONTRIBUTING,README}.md -t \
     "$pkgdir/usr/share/doc/$pkgname/"
