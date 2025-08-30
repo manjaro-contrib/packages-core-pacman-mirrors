@@ -2,15 +2,16 @@
 # Contributor: Philip Müller <philm@manjaro.org>
 
 pkgname=pacman-mirrors
-pkgver=5.0
+pkgver=5.1
 pkgrel=1
-pkgdesc="Manjaro Linux mirror list for use by pacman"
+pkgdesc="Manjaro Linux mirror list generator for use by pacman"
 arch=('any')
 url="https://gitlab.manjaro.org/applications/pacman-mirrors"
 license=('GPL-3.0-or-later')
 depends=(
   'python'
   'python-npyscreen'
+  'python-pytz'
   'python-requests'
 )
 makedepends=(
@@ -29,12 +30,12 @@ optdepends=(
 provides=("pacman-mirrorlist=$pkgver-$pkgrel")
 conflicts=('pacman-mirrorlist' 'reflector')
 backup=("etc/$pkgname.conf")
-source=("git+https://gitlab.manjaro.org/applications/pacman-mirrors.git#tag=v$pkgver"
+source=("git+https://gitlab.manjaro.org/applications/pacman-mirrors.git#tag=v${pkgver}"
         "$pkgname-install.script"
         "$pkgname-upgrade.script"
         "$pkgname-install.hook"
         "$pkgname-upgrade.hook")
-sha256sums=('2c968d16456cc42135dbe61d8e249e09e5dcfcb8c44c2a58318fce4ef42462df'
+sha256sums=('2bce234da24e7dd935407aac5d708bf9779833097d38d9f93a9ce9f5255e78af'
             '718a47605be1ca328255b19047dee6d331e0440f303b86d17485fe53937b7906'
             '3b1df8c662161903653b0ae41d910019f87a58f3ecd8e02ea9ac8859b9c43f17'
             '88befb1a9b167112e05544ec4a765705bf474209e7ef67c44ffc418e10e89bfa'
