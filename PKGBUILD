@@ -35,7 +35,7 @@ source=("git+https://gitlab.manjaro.org/applications/pacman-mirrors.git#tag=v${p
         "$pkgname-upgrade.script"
         "$pkgname-install.hook"
         "$pkgname-upgrade.hook")
-sha256sums=('2bce234da24e7dd935407aac5d708bf9779833097d38d9f93a9ce9f5255e78af'
+sha256sums=('7ae1255dd03cb00edbcbb9f25c8ce0b46c5cfc5a72709d35e20e10d6cc552c3a'
             '718a47605be1ca328255b19047dee6d331e0440f303b86d17485fe53937b7906'
             '3b1df8c662161903653b0ae41d910019f87a58f3ecd8e02ea9ac8859b9c43f17'
             '88befb1a9b167112e05544ec4a765705bf474209e7ef67c44ffc418e10e89bfa'
