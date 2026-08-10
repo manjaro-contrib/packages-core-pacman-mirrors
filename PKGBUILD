@@ -1,4 +1,5 @@
 # Maintainer: Frede Hundewadt <fh@manjaro.org>
+# Maintainer: Mark Wagie <mark at manjaro dot org>
 # Contributor: Philip Müller <philm@manjaro.org>
 
 pkgname=pacman-mirrors
